@@ -1,0 +1,24 @@
+/* CSS Document */
+.nav-css{
+	padding:10px 30px;
+}
+.p-css{
+	margin:10px;	
+}
+.input-form-class{
+	width:200px;	
+}
+.form-main-body{
+	top:150px;
+	position:relative;	
+}
+.div-jumbotron{
+	margin:0px;
+	height:610px;	
+}
+.img-class-repeat{
+	display:inline-block;
+	width:120px;
+	height:35px;
+	background: url(../img/main_person.ico) repeat-x;	
+}
