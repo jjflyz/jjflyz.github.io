@@ -25,7 +25,7 @@
 	}
 	//addEventAndSubmit();
 	EventUtil.addEventHandler(subId,'click',function(){
-		window.location="photoWell.html";
+		window.location="mainPage.html";
 	});
 		
 })();
