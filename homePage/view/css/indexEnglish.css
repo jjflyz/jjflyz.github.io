@@ -14,11 +14,28 @@
 }
 .div-jumbotron{
 	margin:0px;
-	height:610px;	
+	height:730px;	
 }
 .img-class-repeat{
 	display:inline-block;
 	width:120px;
 	height:35px;
 	background: url(../img/main_person.ico) repeat-x;	
+}
+@media screen  and (max-width:1200px){
+	.div-jumbotron{
+		height:800px	
+	}
+	body{
+		background:yellow;	
+	}
+	.new-div-form{
+		display:block;	
+		
+	}
+	.form-main-body{
+		display:block;
+		top:0px;
+		left:0px;	
+	}
 }

@@ -1,5 +1,6 @@
 // JavaScript Document
 $(document).ready(function(e){
+	$("body").css("width", $(window).width()); 
 	$('.set-main-photo').mouseenter(function(){
 		$('.text-div').show(1000);
 	});
