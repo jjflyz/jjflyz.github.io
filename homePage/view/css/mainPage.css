@@ -7,6 +7,10 @@ h2 {
   font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
   color: #676767;
 }
+body {
+  width: 1000px;
+  background: #000000;
+}
 .header-class {
   height: 80px;
   background: #343434;
@@ -341,9 +345,18 @@ h2 {
   background: #343434;
   border-top: 1px outset #232323;
 }
+.animate-class {
+  width: 90px;
+  height: 2090px;
+  background-color: #424242;
+  position: absolute;
+  top: 0px;
+  right: -90px;
+  padding: 0px;
+}
 @media screen and (max-width: 1000px) {
   body {
-    background: red;
+    background: #232323;
     width: 1000px;
   }
   .right-list {
@@ -368,5 +381,8 @@ h2 {
   }
   .footer-class {
     width: 1000px;
+  }
+  .animate-class {
+    display: none;
   }
 }

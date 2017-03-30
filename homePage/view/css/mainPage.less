@@ -57,6 +57,10 @@ h2{
 	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 	color:#676767;	
 }
+body{
+	width:1000px;
+	background:#000000;
+}
 .header-class{
 	height:@headerHight;
 	background:@otherColor;
@@ -400,10 +404,21 @@ h2{
 	background:@otherColor;
 	border-top:1px outset #232323;
 }
+.animate-class{
+	width:90px;
+	height:2090px;
+	background-color:#424242;
+	position:absolute;
+	top:0px;
+	right:-90px;
+	//float:right;
+	padding:0px;	
+}
 @media screen and (max-width:1000px){
+	@width:1000px;
 	body{
-		background:red;	
-		width:1000px;
+		background:#232323;	
+		width:@width;
 	}
 	.right-list{
 		display:none;	
@@ -416,16 +431,19 @@ h2{
 		position:absolute;	
 	}
 	.header-class{
-		width:1000px;
+		width:@width;
 		height:150px;
 		li{
 			width:250px;	
 		}
 	}
 	.main-body{
-		width:1000px;	
+		width:@width;	
 	}
 	.footer-class{
-		width:1000px;	
+		width:@width;	
+	}
+	.animate-class{
+		display:none;
 	}
 }
