@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>sessionStorage</title>
+<style>
+	p{
+		margin:10px;	
+	}
+	.left{
+		width:700px;
+		height:800px;
+		background-color:#DADADA;	
+	}
+	.inputList p span{
+		color:#E81A1E;
+		font-size:18px;	
+	}
+</style>
+</head>
+
+<body>
+<div class="sessionStorage">
+	<p>sessionStorage生命周期</p>
+    <p>与session生命周期一样存在与网页访问阶段；</p>
+    <div class="left">
+    	<div class="inputList">
+        	<p>读取出来数据：<span id="dataSession"></span></p>
+        	<input type="text" id="test1">
+            <button type="button" id="submitId">提交数据</button>
+            <button type="button" id="reloadId">读取数据</button>
+           <textarea>
+           		
+           </textarea>
+        </div>
+    </div>
+</div>
+    <div class="right"></div>
+ <script>
+ window.onload=function(){
+ 	var singleMode=(function(){
+		var instance;
+		//模块化创建类
+		function SaveAndLoad(){
+			var _inputId=null,
+				_value='';
+			//初始化
+			function _initial(){
+				_inputId=document.getElementById("test1");	
+			}
+			//保存数据
+			function _saveData(){
+				_initial();
+				_value=_inputId.value;
+				sessionStorage.setItem('mes',_value);	
+			}
+			//加载数据；
+			function _loadData(){
+				var rs=sessionStorage.getItem('mes');
+				return rs;
+			}
+			//公有方法；
+			return {
+				saveData:function(){
+					_saveData();
+				},
+				loadData:function(){
+					return _loadData();
+				}
+			}
+		}
+		//判断是否是单个实例；
+		return {
+			getInstance:function(){
+				if(!instance){
+					instance=new SaveAndLoad();
+				}
+				return instance;
+			}
+		}
+	})();
+	
+	//alert(singleMode);
+	//主函数入口；
+	!(function main(){
+		//alert('sss');
+		var obj=singleMode.getInstance();
+		//alert(obj);
+		var submitId=document.getElementById("submitId"),
+			loadId=document.getElementById("reloadId");
+		submitId.addEventListener('click',function(){
+			obj.saveData();	
+		},false);
+		loadId.addEventListener('click',function(){
+			var res=obj.loadData(),
+				show=document.getElementById("dataSession");
+			show.innerHTML=res;
+		},false);
+			
+	})();
+ }
+ </script>
+</body>
+</html>

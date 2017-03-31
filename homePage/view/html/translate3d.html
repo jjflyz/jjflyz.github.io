@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>translate3d</title>
+<style>
+.div-class{
+	height:300px;
+	-webkit-perspective: 800;     
+    -webkit-perspective-origin: 50% 50%;     
+    -webkit-transform-style: -webkit-preserve-3d;  
+	background:#C2C2C2;   
+}
+
+.translate{
+	width:1000px;
+	height:200px;
+	margin:100px auto;
+	background-color:#C83C3F;
+	transition: background-color 1s;     
+    -webkit-transition: background-color 1s; 
+}
+.translate:hover {     
+	  background-color: purple;     
+} 
+.xyz{
+	width:170px;
+	height:300px;
+	background-color:#21EBEB;
+	margin:0 auto;
+	padding:10px;	
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="div-class">
+	<div class="translate" id="translate">asgasdgasgasgasgsagasgsag
+    asgasgagsdgs
+    gggfgdg
+    </div>
+</div>
+<div class="xyz">
+	<p>X:&nbsp;<span id="showX">0</span>px</p>
+    <p>Y:&nbsp;<span id="showY">0</span>px</p>
+    <p>Z:&nbsp;<span id="showZ">0</span>px</p>
+	<span>X:</span><input id="X" type="range" min="-360" max="360" value="0"><br/>
+    <span>Y:</span><input id="Y" type="range" min="-360" max="360" value="0"><br/>
+    <span>Z:</span><input id="Z" type="range" min="-360" max="360" value="0">
+</div>
+<script>
+!(function(){
+	var x=document.getElementById("X"),
+		y=document.getElementById('Y'),
+		z=document.getElementById("Z"),
+		showX=document.getElementById("showX"),
+		showY=document.getElementById('showY'),
+		showZ=document.getElementById("showZ");
+	function transX(){
+		 
+		//document.getElementById("translate").style.webkitTransform = "rotateX("+x.value+"deg"+")"; 
+		document.getElementById("translate").style.webkitTransform="rotate3d(0,1,1,"+x.value+"deg)";
+		//document.getElementById("translate").style.webkitTransform = "rotateY("+y.value+"deg"+")";  
+		//document.getElementById("translate").style.webkitTransform = "rotateZ("+z.value+"deg"+")";  
+		//document.getElementById("translate").style.webkitTransform = "translate3d(" + x.value + "px," + y.value + "px," + z .value+ "px)"; 
+		//document.getElementById("translate").style.webkitTransform = "translate3d(" + x.value + "px," + y.value + "px," + z .value+ "px)";
+		//document.getElementById("translate").style.webkitTransform = "translate3d(" + x.value + "px," + y.value + "px," + z .value+ "px)";
+	}
+	function transY(){
+		document.getElementById("translate").style.webkitTransform="rotateY("+y.value+"deg"+")";
+	}
+	function transZ(){
+		document.getElementById("translate").style.webkitTransform="rotateZ("+z.value+"deg"+")";
+	}
+	x.addEventListener('mousemove',transX,false);
+	y.addEventListener('mousemove',transY,false);
+	z.addEventListener('mousemove',transZ,false);
+})();
+</script>
+</body>
+</html>

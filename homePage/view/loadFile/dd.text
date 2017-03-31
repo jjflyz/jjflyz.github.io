@@ -1,0 +1,77 @@
+<div class="localStorage">
+    <p class="pclass">localStorage生命周期</p>
+    <p class="pclass">一直存在于本地中，除非清空</p>
+    <div class="right">
+        <div class="inputList">
+           <p>读取出来数据：<span id="datalocal"></span></p>
+            <input type="text" id="test2">
+            <button type="button" id="submitId2">提交数据</button>
+            <button type="button" id="reloadId2">读取数据</button>                    
+         </div>
+    </div>
+</div>
+window.onload=function(){
+
+	var singleMode2=(function(){
+		var instance;
+		//模块化创建类
+		function SaveAndLoad(){
+			var _inputId=null,
+				_value='';
+			//初始化
+			function _initial(){
+				_inputId=document.getElementById("test2");	
+			}
+			//保存数据
+			function _saveData(){
+				_initial();
+				_value=_inputId.value;
+				localStorage.setItem('mes',_value);	
+			}
+			//加载数据；
+			function _loadData(){
+				var rs=localStorage.getItem('mes');
+				return rs;
+			}
+			//公有方法；
+			return {
+				saveData:function(){
+					_saveData();
+				},
+				loadData:function(){
+					return _loadData();
+				}
+			}
+		}
+		//判断是否是单个实例；
+		return {
+			getInstance:function(){
+				if(!instance){
+					instance=new SaveAndLoad();
+				}
+				return instance;
+			}
+		}
+	})();
+	
+	//alert(singleMode);
+	//主函数入口；
+	!(function main2(){
+		//alert('sss');
+		var obj=singleMode2.getInstance();
+		//alert(obj);
+		var submitId2=document.getElementById("submitId2"),
+			loadId2=document.getElementById("reloadId2");
+		submitId2.addEventListener('click',function(){
+			obj.saveData();	
+		},false);
+		loadId2.addEventListener('click',function(){
+			var res=obj.loadData(),
+				show=document.getElementById("datalocal");
+			show.innerHTML=res;
+		},false);
+			
+	})();
+	
+}
+

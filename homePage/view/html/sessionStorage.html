@@ -1,0 +1,384 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+<title>sessionStorage</title>
+<style>
+ 	.pclass{
+		margin:10px;	
+		color:#39D6D2;
+	}
+	.left{
+		width:700px;
+		height:1600px;
+		background-color:#DADADA;	
+	}
+	.inputList p span{
+		color:#E81A1E;
+		font-size:18px;	
+	}
+	.textCode{
+		width:500px;
+		height:1400px;
+		margin:10px;
+	}
+	.sessionStorage{
+		width:700px;
+		height:1700px;
+		float:left;
+		border-right-color:#000000;
+		border-right-style:solid;
+		border-right-width:2px;	
+	}
+	.localStorage{
+		float:left;
+		width:710px;
+		height:1700px;
+	}
+	.right{
+		position:relative;
+		/*top:5px;*/
+		width:710px;
+		height:1600px;
+		background-color:#DADADA;		
+	}
+	.rightText{
+		width:500px;
+		height:1400px;
+		margin:10px;
+	}
+</style>
+</head>
+
+<body>
+<div class="sessionStorage">
+	<p class="pclass">sessionStorage生命周期</p>
+    <p class="pclass">与session生命周期一样存在与网页访问阶段；</p>
+    <div class="left">
+    	<div class="inputList">
+        	<p>读取出来数据：<span id="dataSession"></span></p>
+        	<input type="text" id="test1">
+            <button type="button" id="submitId">提交数据</button>
+            <button type="button" id="reloadId">读取数据</button><br>
+            <textarea  class="textCode" disabled>
+                        '<!doctype html>
+                        <html>
+                        <head>
+                        <meta charset="UTF-8">
+                        <title>sessionStorage</title>
+                        <style>
+                            p{
+                                margin:10px;	
+                            }
+                            .left{
+                                width:700px;
+                                height:800px;
+                                background-color:#DADADA;	
+                            }
+                            .inputList p span{
+                                color:#E81A1E;
+                                font-size:18px;	
+                            }
+                        </style>
+                        </head>
+                        
+                        <body>
+                        <div class="sessionStorage">
+                            <p>sessionStorage生命周期</p>
+                            <p>与session生命周期一样存在与网页访问阶段；</p>
+                            <div class="left">
+                                <div class="inputList">
+                                    <p>读取出来数据：<span id="dataSession"></span></p>
+                                    <input type="text" id="test1">
+                                    <button type="button" id="submitId">提交数据</button>
+                                    <button type="button" id="reloadId">读取数据</button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                            <div class="right"></div>
+                         <script>
+                         window.onload=function(){
+                            var singleMode=(function(){
+                                var instance;
+                                //模块化创建类
+                                function SaveAndLoad(){
+                                    var _inputId=null,
+                                        _value='';
+                                    //初始化
+                                    function _initial(){
+                                        _inputId=document.getElementById("test1");	
+                                    }
+                                    //保存数据
+                                    function _saveData(){
+                                        _initial();
+                                        _value=_inputId.value;
+                                        sessionStorage.setItem('mes',_value);	
+                                    }
+                                    //加载数据；
+                                    function _loadData(){
+                                        var rs=sessionStorage.getItem('mes');
+                                        return rs;
+                                    }
+                                    //公有方法；
+                                    return {
+                                        saveData:function(){
+                                            _saveData();
+                                        },
+                                        loadData:function(){
+                                            return _loadData();
+                                        }
+                                    }
+                                }
+                                //判断是否是单个实例；
+                                return {
+                                    getInstance:function(){
+                                        if(!instance){
+                                            instance=new SaveAndLoad();
+                                        }
+                                        return instance;
+                                    }
+                                }
+                            })();
+                            
+                            //alert(singleMode);
+                            //主函数入口；
+                            !(function main(){
+                                //alert('sss');
+                                var obj=singleMode.getInstance();
+                                //alert(obj);
+                                var submitId=document.getElementById("submitId"),
+                                    loadId=document.getElementById("reloadId");
+                                submitId.addEventListener('click',function(){
+                                    obj.saveData();	
+                                },false);
+                                loadId.addEventListener('click',function(){
+                                    var res=obj.loadData(),
+                                        show=document.getElementById("dataSession");
+                                    show.innerHTML=res;
+                                },false);
+                                    
+                            })();
+                         }
+                         </script>
+                        </body>
+                        </html>';
+            </textarea>
+        </div>
+    </div>
+</div>
+<div class="localStorage">
+    <p class="pclass">localStorage生命周期</p>
+    <p class="pclass">一直存在于本地中，除非清空，关闭浏览器也存在。</p>
+    <div class="right">
+        <div class="inputList">
+           <p>读取出来数据：<span id="datalocal"></span></p>
+            <input type="text" id="test2">
+            <button type="button" id="submitId2">提交数据</button>
+            <button type="button" id="reloadId2">读取数据</button><br>
+            <textarea class="rightText" disabled>
+   'var singleMode2=(function(){
+		var instance;
+		//模块化创建类
+		function SaveAndLoad(){
+			var _inputId=null,
+				_value='';
+			//初始化
+			function _initial(){
+				_inputId=document.getElementById("test2");	
+			}
+			//保存数据
+			function _saveData(){
+				_initial();
+				_value=_inputId.value;
+				localStorage.setItem('mes',_value);	
+			}
+			//加载数据；
+			function _loadData(){
+				var rs=localStorage.getItem('mes');
+				return rs;
+			}
+			//公有方法；
+			return {
+				saveData:function(){
+					_saveData();
+				},
+				loadData:function(){
+					return _loadData();
+				}
+			}
+		}
+		//判断是否是单个实例；
+		return {
+			getInstance:function(){
+				if(!instance){
+					instance=new SaveAndLoad();
+				}
+				return instance;
+			}
+		}
+	})();
+	
+	//alert(singleMode);
+	//主函数入口；
+	!(function main2(){
+		//alert('sss');
+		var obj=singleMode2.getInstance();
+		//alert(obj);
+		var submitId2=document.getElementById("submitId2"),
+			loadId2=document.getElementById("reloadId2");
+		submitId2.addEventListener('click',function(){
+			obj.saveData();	
+		},false);
+		loadId2.addEventListener('click',function(){
+			var res=obj.loadData(),
+				show=document.getElementById("datalocal");
+			show.innerHTML=res;
+		},false);
+			
+	})();
+	
+}
+
+';
+            </textarea>                   
+         </div>
+    </div>
+</div>
+<script src="../js/jquery-3.1.1.min.js"></script>
+ <script>
+ window.onload=function(){
+	$('body').css("width",$(window).width());
+	var body=document.getElementsByTagName('body');
+	body[0].width=window.innerWidth;
+ 	var singleMode=(function(){
+		var instance;
+		//模块化创建类
+		function SaveAndLoad(){
+			var _inputId=null,
+				_value='';
+			//初始化
+			function _initial(){
+				_inputId=document.getElementById("test1");	
+			}
+			//保存数据
+			function _saveData(){
+				_initial();
+				_value=_inputId.value;
+				sessionStorage.setItem('mes',_value);	
+			}
+			//加载数据；
+			function _loadData(){
+				var rs=sessionStorage.getItem('mes');
+				return rs;
+			}
+			//公有方法；
+			return {
+				saveData:function(){
+					_saveData();
+				},
+				loadData:function(){
+					return _loadData();
+				}
+			}
+		}
+		//判断是否是单个实例；
+		return {
+			getInstance:function(){
+				if(!instance){
+					instance=new SaveAndLoad();
+				}
+				return instance;
+			}
+		}
+	})();
+	
+	//alert(singleMode);
+	//主函数入口；
+	!(function main(){
+		//alert('sss');
+		var obj=singleMode.getInstance();
+		//alert(obj);
+		var submitId=document.getElementById("submitId"),
+			loadId=document.getElementById("reloadId");
+		submitId.addEventListener('click',function(){
+			obj.saveData();	
+		},false);
+		loadId.addEventListener('click',function(){
+			var res=obj.loadData(),
+				show=document.getElementById("dataSession");
+			show.innerHTML=res;
+		},false);
+			
+	})();
+	
+	
+	
+	var singleMode2=(function(){
+		var instance;
+		//模块化创建类
+		function SaveAndLoad(){
+			var _inputId=null,
+				_value='';
+			//初始化
+			function _initial(){
+				_inputId=document.getElementById("test2");	
+			}
+			//保存数据
+			function _saveData(){
+				_initial();
+				_value=_inputId.value;
+				localStorage.setItem('mes',_value);	
+			}
+			//加载数据；
+			function _loadData(){
+				var rs=localStorage.getItem('mes');
+				return rs;
+			}
+			//公有方法；
+			return {
+				saveData:function(){
+					_saveData();
+				},
+				loadData:function(){
+					return _loadData();
+				}
+			}
+		}
+		//判断是否是单个实例；
+		return {
+			getInstance:function(){
+				if(!instance){
+					instance=new SaveAndLoad();
+				}
+				return instance;
+			}
+		}
+	})();
+	
+	//alert(singleMode);
+	//主函数入口；
+	!(function main2(){
+		//alert('sss');
+		var obj=singleMode2.getInstance();
+		//alert(obj);
+		var submitId2=document.getElementById("submitId2"),
+			loadId2=document.getElementById("reloadId2");
+		submitId2.addEventListener('click',function(){
+			obj.saveData();	
+		},false);
+		loadId2.addEventListener('click',function(){
+			var res=obj.loadData(),
+				show=document.getElementById("datalocal");
+			show.innerHTML=res;
+		},false);
+			
+	})();
+	
+	
+ }
+ </script>
+</body>
+</html>
