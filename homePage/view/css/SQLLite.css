@@ -1,0 +1,70 @@
+*{
+	margin:0px;
+	padding:0px;	
+}
+body{
+	background:#949494;
+	width:1400px;
+	height:2000px;		
+}
+h1{
+	width:500px;
+	margin:10px auto;
+	position:relative;	
+}
+h2{
+	margin:5px;	
+}
+
+.left,.right{
+	margin:10px;
+	width:680px;	
+	height:2000px;
+	background:#D8D8D8;
+	float:left;
+}
+.editArea span{
+	line-height:30px;
+	font-size:18px;
+	margin:10px;
+}
+.editArea input{
+	width:200px;
+	height:20px;
+}
+button{
+	margin-top:20px;
+	margin-bottom:10px;
+	width:50px;
+	height:20px;
+	left:70px;
+	position:relative;	
+}
+.showArea{
+	width:400px;
+	height:400px;
+	margin:10px;
+	padding:0px;	
+}
+.dataClass{
+	border:1px solid #000000;	
+}
+.dataClass td{
+	border:1px solid #000000;
+	padding:0px;
+	margin:0px;	
+}
+.showArea span{
+	line-height:30px;
+	font-size:18px;
+	margin:10px;
+}
+.showArea input{
+	width:200px;
+	height:20px;
+}
+textarea{
+	width:600px;
+	height:1980px;	
+	padding:10px;
+}

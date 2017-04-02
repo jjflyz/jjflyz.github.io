@@ -1,3 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SQLLite</title>
+<link type="text/css" href="../css/SQLLite.css" rel="stylesheet">
+</head>
+
+<body>
+<h1>使用数据库实现web留言本</h1>
+<div class="left">
+	<h2>web留言测试区</h2>
+    <div class="editArea">
+    	<span>姓名:&nbsp;&nbsp;</span><input type="text" id="name"><br>
+        <span>留言:&nbsp;&nbsp;</span><input type="text" id="memo"><br>
+        <button type="button" value="保存" id="saveId">保存</button>
+    </div>
+    <hr>
+    <div class="showArea">
+    	<span>查询:&nbsp;&nbsp;</span><input type="text" id="searchId"><br>
+        <button type="button" value="查询" id="searchBtn">查询</button>
+    	<table id="dataTable" class="dataClass">
+        </table>
+    </div>
+</div>
+<div class="right">
+	<textarea id="text">
 window.onload=function(){
 $("body").css("width",$(window).width());
 	//数据库操作类；
@@ -113,3 +140,11 @@ var dataObj=(function(){
 	
 };
 
+
+    </textarea>
+</div>
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="../js/SQLLite.js"></script>
+<script src="../js/SQLLiteCode.js"></script>
+</body>
+</html>
