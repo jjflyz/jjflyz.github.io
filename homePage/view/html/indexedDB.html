@@ -3,8 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <title>indexedDB learning</title>
+    <link type="text/css" href="../css/indexedDBPosition.css" rel="stylesheet">
+    <link type="text/css" href="../css/indexedDBDetail.css" rel="stylesheet">
 </head>
 <body>
+    <div class="container">
+        <h1 class="titile-h1">IndexedDB Learning</h1>
+        <div class="designed-detail">
+            <h1>Designed by tianjian ,if you want to learn it just do it!</h1>
+        </div>
+        <div class="context-class">
+            <div class="small-title"></div>
+            <div class="show-div">
+                <div style="z-index: 2;left: 20px; top:30px; position: relative">
+                    <a href="../js/indexedDB.js">点击查看全部源码</a>
+                </div>
+                <div class="left-title">
+                    <ul>
+                        <li class="li-title"><a href="#">indexedDB 说明</a></li>
+                        <li><a href="#">1.indexedDB 创建</a></li>
+                        <li><a href="#">2.indexedDB 更新</a></li>
+                        <li><a href="#">3.indexedDB 创建主键</a></li>
+                        <li><a href="#">4.indexedDB 创建索引</a></li>
+                        <li><a href="#">5.indexedDB 创建事务</a></li>
+                        <li><a href="#">6.indexedDB 主键查询</a></li>
+                        <li><a href="#">7.indexedDB 索引查询</a></li>
+                        <li><a href="#">8.indexedDB 游标主键</a> </li>
+                        <li><a href="#">9.indexedDB 游标索引</a> </li>
+                        <li><a href="#">10.indexedDB 删除数据库</a> </li>
+                    </ul>
+                </div>
+                <canvas id="triangle-can"></canvas>
+                <div class="right-document" id="show-0">
+                    <h2>IndexedDB 说明</h2>
+                    <span>
+                        IndexedDB是HTML5-WebStorage的重要一环，是一种轻量级NOSQL数据库;一个网站可能有一个或多个 IndexedDB 数据库，
+                        每个数据库必须具有惟一的名称。一个数据库可包含一个或多个对象存储。一个对象存储（由一个名称惟一标识）是一个记录集合。
+                        每个记录有一个键 和一个值。该值是一个对象，可拥有一个或多个属性。键可能基于某个键生成器，从一个键路径衍生出来，或者是显式设置。
+                        一个键生成器自动生成惟一的连续正整数。键路径定义了键值的路径。它可以是单个 JavaScript 标识符或多个由句点分隔的标识符。
+                    </span>
+                    <!--<div class="triangle-left"></div>-->
+                    <!--<canvas id="triangle-can"></canvas>-->
+                    <h2>设置兼容性</h2>
+                    <img src="../img/compatible.png" style="width: 550px; height: 80px">
+                </div>
+                <div class="right-document" id="show-1">
+                    <h2>创建数据库以及打开数据库代码</h2>
+                    <p>参数一：数据库名。</p>
+                    <p>参数二：数据库版本，一般用于更新数据库，可以触发更新数据库事件。</p>
+                    <img src="../img/create.png" style="width: 500px;">
+                </div>
+                <div class="right-document" id="show-2">
+                    <img src="../img/gradeneed.png" style="width: 600px;">
+                </div>
+                <div class="right-document" id="show-3">
+                    <img src="../img/mainkey.png" style="width: 550px">
+                    <p>红色区域是创建仓库以及建立主键的代码</p>
+                </div>
+                <div class="right-document" id="show-4">
+                    <img src="../img/index.png" style="width: 550px">
+                    <p>红色区域是创建仓索引的代码</p>
+                </div>
+                <div class="right-document" id="show-5">
+                    <img src="../img/transaction.png" style="width: 600px">
+                    <p>红色区域是获取事务的代码</p>
+                </div>
+                <div class="right-document" id="show-6">
+                    <img src="../img/keySearch.png" style="width: 500px">
+                </div>
+                <div class="right-document" id="show-7">
+                    <img src="../img/indexSearch.png" style="width:500px">
+                </div>
+                <div class="right-document" id="show-8">
+                    <img src="../img/keyBoundCursor.png" style="width:500px">
+                </div>
+                <div class="right-document" id="show-9">
+                    <img src="../img/indexBoundCursor.png" style="width: 600px">
+                </div>
+                <div class="right-document" id="show-10">
+                    <img src="../img/delete.png" style="width:500px;">
+                </div>
+            </div>
 
+        </div>
+    </div>
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/EventUtil.js"></script>
+<script src="../js/triangle.js"></script>
+<script src="../js/indexedDBShow.js"></script>
 </body>
 </html>

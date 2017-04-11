@@ -1,0 +1,80 @@
+body{
+  background-image:url("../img/background.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+p{
+  height: 30px;
+}
+.backgrundSet(){
+  background:linear-gradient(rgba(247,247,247,0.9),rgba(247,247,247,0.4));
+}
+.container{
+  //background-color:#e5e5e5;
+  .titile-h1{
+    font-size:50px;
+    font-style:italic;
+  }
+  .designed-detail{
+    border-radius: 30px;
+    .backgrundSet();
+    h1{
+      text-align:center;
+      font-style:italic;
+    }
+  }
+
+  //li和a的综合
+  .liAndAFunc(){
+    li{
+      line-height: 30px;
+      width:200px;
+      height: 30px;
+      //background: #4dc71f;
+     // border:1px solid #000000;
+      margin:1px;
+      border-radius: 5px;
+    }
+    a{
+      font-size: 18px;
+      text-decoration: none;
+      font-style: italic;
+      color:darkgreen;
+    }
+  }
+  .context-class{
+    border-radius:30px;
+    .backgrundSet();
+    .left-title{
+      //background: #1b6d85;
+      ul{
+
+        list-style: none;
+        .liAndAFunc();
+        .li-title{
+          //padding-left:10px;
+          a{
+            left:40px;
+            position:relative;
+            //font-weight: bold;
+          }
+
+        }
+      }
+    }
+    .right-document{
+      //background:darkgreen;
+      border-radius: 30px;
+      background:linear-gradient(rgba(9,99,12,0.9),rgba(9,99,12,0.9));
+    }
+  }
+}
+.triangle-left{
+  width:0px;
+  height:0px;
+  border-top:-10px solid transparent;
+  border-bottom:40px solid transparent;
+  border-right: 100px solid red;
+  display: none;
+}

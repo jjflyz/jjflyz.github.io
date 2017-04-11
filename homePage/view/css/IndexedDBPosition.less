@@ -1,0 +1,71 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+@bodyWidth:1366px;
+@bodyHeight:1100px;
+body{
+  width:@bodyWidth;
+  height:@bodyHeight;
+}
+.container{
+  //定义变量；
+  @containerWidth:900px;
+  @containerHeight:1000px;
+  margin:0 auto;
+  width:@containerWidth;
+  height:@containerHeight;
+  .titile-h1{
+    margin:20px auto;
+    width:500px;
+    heigth:40px;
+  }
+  .designed-detail{
+    margin:0px auto;
+    width:100%;
+    height:100px;
+   // background: #81e8f6;
+    h1{
+      top:30px;
+      width:100%;
+      height:60px;
+      position: relative;
+    }
+  }
+  .context-class{
+    @leftWidth:220px;
+    @leftHeight:800px;
+    top:50px;
+    width:100%;
+    height:(@bodyHeight)-20*2-100-50;
+   // background:#1b6d85;
+    position: relative;
+    .left-title{
+      width:@leftWidth;
+      height: @leftHeight;
+      margin:15px;
+      float:left;
+      ul{
+        top:150px;
+        position:relative;
+      }
+    }
+    .right-document{
+      //float:left;
+      top:50px;
+      left:260px;
+      position:absolute;
+      width:550px;
+      height:400px;
+      padding:10px;
+    }
+  }
+}
+#triangle-can{
+  width:200px;
+  height:100px;
+  position:absolute;
+  top:185px;
+  left:180px;
+  z-index: 1;
+}

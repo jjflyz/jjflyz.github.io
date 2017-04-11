@@ -1,0 +1,61 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  width: 1366px;
+  height: 1100px;
+}
+.container {
+  margin: 0 auto;
+  width: 900px;
+  height: 1000px;
+}
+.container .titile-h1 {
+  margin: 20px auto;
+  width: 500px;
+  heigth: 40px;
+}
+.container .designed-detail {
+  margin: 0px auto;
+  width: 100%;
+  height: 100px;
+}
+.container .designed-detail h1 {
+  top: 30px;
+  width: 100%;
+  height: 60px;
+  position: relative;
+}
+.container .context-class {
+  top: 50px;
+  width: 100%;
+  height: 910px;
+  position: relative;
+}
+.container .context-class .left-title {
+  width: 220px;
+  height: 800px;
+  margin: 15px;
+  float: left;
+}
+.container .context-class .left-title ul {
+  top: 150px;
+  position: relative;
+}
+.container .context-class .right-document {
+  top: 50px;
+  left: 260px;
+  position: absolute;
+  width: 550px;
+  height: 400px;
+  padding: 10px;
+}
+#triangle-can {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: 185px;
+  left: 180px;
+  z-index: 1;
+}
