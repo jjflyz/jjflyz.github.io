@@ -1,4 +1,5 @@
-(function(){
+window.onload=function(){
+!(function(){
     $("body").css('width',$(window).width);
     function getStyleSheetCss(element,attr){
         //兼容IE
@@ -174,3 +175,5 @@
     setAllElemEvent();
     initFunc();
 })();
+
+};

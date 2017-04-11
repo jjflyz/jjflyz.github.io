@@ -1,4 +1,5 @@
-(function(){
+window.onload=function(){
+!(function(){
     function drawTriangle(id){
         var context=id.getContext('2d');
         context.beginPath();
@@ -15,3 +16,4 @@
     var canvas=document.querySelector("#triangle-can");
     drawTriangle(canvas);
 })();
+}
