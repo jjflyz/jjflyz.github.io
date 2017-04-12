@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac0bc3e8-62f1-415d-ab3f-8a8dfbdfd322" name="Default" comment="" />
+    <list default="true" id="ac0bc3e8-62f1-415d-ab3f-8a8dfbdfd322" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homePage/view/html/indexedDB.html" afterPath="$PROJECT_DIR$/homePage/view/html/indexedDB.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homePage/view/js/EventUtil.js" afterPath="$PROJECT_DIR$/homePage/view/js/EventUtil.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homePage/view/js/indexedDBShow.js" afterPath="$PROJECT_DIR$/homePage/view/js/indexedDBShow.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homePage/view/js/triangle.js" afterPath="$PROJECT_DIR$/homePage/view/js/triangle.js" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -18,7 +24,7 @@
       <file leaf-file-name="mainPage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homePage/view/html/mainPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
+            <state relative-caret-position="3015">
               <caret line="201" column="0" lean-forward="false" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="49" />
               <folding>
                 <element signature="e#6700#6706#0" expanded="true" />
@@ -37,18 +43,18 @@
       <file leaf-file-name="mainPage.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homePage/view/css/mainPage.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="5130">
               <caret line="342" column="23" lean-forward="false" selection-start-line="342" selection-start-column="23" selection-end-line="342" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="indexedDB.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="indexedDB.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/homePage/view/html/indexedDB.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-706">
-              <caret line="6" column="45" lean-forward="false" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="45" />
+            <state relative-caret-position="239">
+              <caret line="17" column="78" lean-forward="false" selection-start-line="17" selection-start-column="78" selection-end-line="17" selection-end-column="78" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#2;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -70,18 +76,28 @@
       <file leaf-file-name="indexedDBShow.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homePage/view/js/indexedDBShow.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="43" lean-forward="false" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+            <state relative-caret-position="43">
+              <caret line="138" column="50" lean-forward="true" selection-start-line="138" selection-start-column="50" selection-end-line="138" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndexedDBPosition.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="triangle.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/homePage/view/js/triangle.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexedDBPosition.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homePage/view/css/IndexedDBPosition.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+            <state relative-caret-position="559">
+              <caret line="67" column="9" lean-forward="false" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -90,7 +106,7 @@
       <file leaf-file-name="IndexedDBPosition.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homePage/view/css/IndexedDBPosition.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-301">
+            <state relative-caret-position="-296">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -100,8 +116,8 @@
       <file leaf-file-name="IndexedDBDetail.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homePage/view/css/IndexedDBDetail.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="75" column="14" lean-forward="false" selection-start-line="75" selection-start-column="14" selection-end-line="75" selection-end-column="14" />
+            <state relative-caret-position="304">
+              <caret line="59" column="32" lean-forward="true" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -110,20 +126,10 @@
       <file leaf-file-name="IndexedDBDetail.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homePage/view/css/IndexedDBDetail.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
+            <state relative-caret-position="795">
               <caret line="53" column="13" lean-forward="false" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="indexDB.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/homePage/view/js/indexDB.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="124" column="13" lean-forward="true" selection-start-line="124" selection-start-column="13" selection-end-line="124" selection-end-column="13" />
               <folding>
-                <element signature="e#0#41#0" expanded="false" />
+                <marker date="1491914582000" expanded="true" signature="1444:1604" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -132,7 +138,7 @@
       <file leaf-file-name="indexedDB.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homePage/view/js/indexedDB.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
+            <state relative-caret-position="2790">
               <caret line="188" column="46" lean-forward="false" selection-start-line="188" selection-start-column="46" selection-end-line="188" selection-end-column="46" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
@@ -166,15 +172,15 @@
         <option value="$PROJECT_DIR$/homePage/view/html/indexDB.html" />
         <option value="$PROJECT_DIR$/homePage/view/html/index1.html" />
         <option value="$PROJECT_DIR$/homePage/view/css/mainPage.less" />
-        <option value="$PROJECT_DIR$/homePage/view/js/triangle.js" />
         <option value="$PROJECT_DIR$/homePage/view/js/indexedDB.js" />
         <option value="$PROJECT_DIR$/homePage/view/js/indexDB.js" />
         <option value="$PROJECT_DIR$/homePage/view/html/mainPage.html" />
-        <option value="$PROJECT_DIR$/homePage/view/js/indexedDBShow.js" />
         <option value="$PROJECT_DIR$/homePage/view/css/IndexedDBDetail.less" />
         <option value="$PROJECT_DIR$/homePage/view/css/IndexedDBDetail.css" />
-        <option value="$PROJECT_DIR$/homePage/view/css/IndexedDBPosition.less" />
         <option value="$PROJECT_DIR$/homePage/view/css/IndexedDBPosition.css" />
+        <option value="$PROJECT_DIR$/homePage/view/js/triangle.js" />
+        <option value="$PROJECT_DIR$/homePage/view/css/IndexedDBPosition.less" />
+        <option value="$PROJECT_DIR$/homePage/view/js/indexedDBShow.js" />
         <option value="$PROJECT_DIR$/homePage/view/html/indexedDB.html" />
       </list>
     </option>
@@ -191,7 +197,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="825" />
+    <option name="height" value="830" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -208,7 +214,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -299,7 +305,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -407,14 +413,16 @@
       <workItem from="1491484508183" duration="3740000" />
       <workItem from="1491525369320" duration="20646000" />
       <workItem from="1491785030453" duration="22518000" />
+      <workItem from="1491957821137" duration="290000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84688000" />
+    <option name="totallyTimeSpent" value="84978000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="825" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="830" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17222223" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -511,7 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -555,7 +562,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -620,7 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -696,7 +701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -776,21 +780,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/homePage/view/js/triangle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="46" lean-forward="false" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/homePage/view/js/indexDB.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
+        <state relative-caret-position="1830">
           <caret line="124" column="13" lean-forward="true" selection-start-line="124" selection-start-column="13" selection-end-line="124" selection-end-column="13" />
           <folding>
             <element signature="e#0#41#0" expanded="false" />
@@ -800,7 +795,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/homePage/view/js/indexedDB.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
+        <state relative-caret-position="2790">
           <caret line="188" column="46" lean-forward="false" selection-start-line="188" selection-start-column="46" selection-end-line="188" selection-end-column="46" />
           <folding>
             <element signature="e#0#41#0" expanded="false" />
@@ -811,7 +806,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/homePage/view/css/mainPage.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="5130">
           <caret line="342" column="23" lean-forward="false" selection-start-line="342" selection-start-column="23" selection-end-line="342" selection-end-column="23" />
           <folding />
         </state>
@@ -819,7 +814,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/homePage/view/html/mainPage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
+        <state relative-caret-position="3015">
           <caret line="201" column="0" lean-forward="false" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="49" />
           <folding>
             <element signature="e#6700#6706#0" expanded="true" />
@@ -834,42 +829,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homePage/view/js/indexedDBShow.js">
+    <entry file="file://$PROJECT_DIR$/homePage/view/css/IndexedDBDetail.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="43" lean-forward="false" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
-          <folding />
+        <state relative-caret-position="795">
+          <caret line="53" column="13" lean-forward="false" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+          <folding>
+            <marker date="1491914582000" expanded="true" signature="1444:1604" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/homePage/view/css/IndexedDBDetail.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="75" column="14" lean-forward="false" selection-start-line="75" selection-start-column="14" selection-end-line="75" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/homePage/view/css/IndexedDBDetail.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="53" column="13" lean-forward="false" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+        <state relative-caret-position="304">
+          <caret line="59" column="32" lean-forward="true" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/homePage/view/css/IndexedDBPosition.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-301">
+        <state relative-caret-position="-296">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homePage/view/css/IndexedDBPosition.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="67" column="9" lean-forward="false" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homePage/view/js/triangle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homePage/view/js/indexedDBShow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="138" column="50" lean-forward="true" selection-start-line="138" selection-start-column="50" selection-end-line="138" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/homePage/view/html/indexedDB.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-706">
-          <caret line="6" column="45" lean-forward="false" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="45" />
+        <state relative-caret-position="239">
+          <caret line="17" column="78" lean-forward="false" selection-start-line="17" selection-start-column="78" selection-end-line="17" selection-end-column="78" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#2;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -884,14 +897,6 @@
             <element signature="n#style#0;n#img#0;n#div#11;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#12;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/homePage/view/css/IndexedDBPosition.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>

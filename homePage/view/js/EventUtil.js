@@ -1,4 +1,3 @@
-window.onload=function(){
 var EventUtil={
 	addEventHandler:function(element,type,listener){
 		if(element.addEventListener){
@@ -19,5 +18,4 @@ var EventUtil={
 		}
 	}
 	
-}
 }

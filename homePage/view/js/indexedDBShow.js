@@ -1,4 +1,4 @@
-window.onload=function(){
+
 !(function(){
     $("body").css('width',$(window).width);
     function getStyleSheetCss(element,attr){
@@ -176,4 +176,3 @@ window.onload=function(){
     initFunc();
 })();
 
-};
