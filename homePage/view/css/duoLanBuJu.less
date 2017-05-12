@@ -1,0 +1,40 @@
+*{
+    padding:0px 0px;
+    margin:0px 0px;
+}
+body{
+    background: gray;
+}
+/*
+*设置分栏的less函数；
+*/
+.columnFunc(@width,@count,@gap){
+    column-width:@width;
+    column-count:@count;
+    column-gap:@gap;
+
+}
+.container{
+    width:1020px;
+    height:1600px;
+    margin:0 auto;
+    background:deepskyblue;
+    .main-section{
+        width:100%;
+        height:100%;
+        .columnFunc(200px,5,5px);
+        div{
+            margin-top:5px;
+            width:200px;
+            height:180px;
+            background: slateblue;
+            //border:1px solid black;
+            img{
+                width:200px;
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+}

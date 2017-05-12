@@ -100,13 +100,19 @@ $(document).ready(function(e){
 		musicInfoLi[1].innerHTML='歌名：'+arrName[1];
 		
 	}
-	//点击play;
-	//function 
+	//导航栏btn绑定事件
+	function bindBtn(){
+		var btn1=document.querySelector(".btn-one");
+		btn1.addEventListener('click',function(e){
+			window.location="duoLanBuJu.html";	
+		},false);	
+	}
 	//主函数入口；
 	!(function(){
 		setCircleDistance();
 		playOrNot();
 		musicInfo();
+		bindBtn();
 	})();
 	
 })
