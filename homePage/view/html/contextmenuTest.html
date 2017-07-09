@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contextmenuTest</title>
+</head>
+<body>
+    <div id="myDiv">
+        Right click or Ctrl+click me to get a custom context menu,
+        Click anywhere else to get the default context menu.
+    </div>
+    <ul id="myMenu" style="position:absolute; visibility:hidden;background-color:silver;">
+        <li><a href="http://www.google.com">google</a></li>
+        <li><a href="http://www.baidu.com">baidu</a></li>
+        <li><a href="http://www.yahoo.com">Yahoo</a> </li>
+    </ul>
+</body>
+<script src="../js/Event.js"></script>
+<script>
+    (function main(){
+        function contextmenuFunc(){
+            var myDiv=document.querySelector('#myDiv');
+            EventUtil.addEventHandler(myDiv,'contextmenu',function(event){
+                event=event||window.event;
+                if(event.preventDefault){
+                    event.preventDefault();
+                }else{
+                    event.returnValue=false;
+                }
+                var menu=document.querySelector('#myMenu');
+                menu.style.left=event.clientX+'px';
+                menu.style.top=event.clientY+"px";
+                menu.style.visibility="visible";
+            });
+            //电击body ul隐藏；
+            EventUtil.addEventHandler(document,'click',function(event){
+                var menu=document.querySelector('#myMenu');
+                menu.style.visibility='hidden';
+            });
+        }
+        //调用函数；
+        contextmenuFunc();
+    })();
+</script>
+</html>

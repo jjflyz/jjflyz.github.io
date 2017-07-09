@@ -1,0 +1,16 @@
+@keyframes left_widthbigger {
+  100% {
+    width: 0%;
+  }
+  0% {
+    width: 92%;
+  }
+}
+@-webkit-keyframes left_widthbigger {
+  100% {
+    width: 0%;
+  }
+  0% {
+    width: 92%;
+  }
+}

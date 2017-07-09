@@ -1,0 +1,36 @@
+*{
+    padding:0px;
+    margin:0px;
+    font:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif
+}
+.left{
+    width:230px;
+    height:800px;
+    background-color: #1b6d85;
+    max-height: 800px;
+    overflow: auto;
+}
+.class1{
+    width:150px;
+}
+#show-div{
+    /*width:200px;*/
+}
+.list-a-show{
+    display: none;
+    max-height: 300px;
+    overflow: auto;
+}
+
+.list-group{
+    margin-bottom: 0px;
+    /*width:200px;*/
+}
+.container{
+    width:200px;
+}
+.caretDiv{
+    position: relative;
+    display: inline-block;
+    float:right;
+}

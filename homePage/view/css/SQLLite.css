@@ -10,7 +10,8 @@ body{
 h1{
 	width:500px;
 	margin:10px auto;
-	position:relative;	
+	position:relative;
+	background-color:#42086D	
 }
 h2{
 	margin:5px;	

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>left</title>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+        }
+        .left{
+            width:230px;
+            height:800px;
+            background-color: #1b6d85;
+            max-height: 800px;
+            overflow: auto;
+            padding-left:5px;
+
+        }
+        .list-group1{
+            width:180px;
+            background:#337ab7;
+            margin-bottom:2px;
+            height:52px;
+            height:auto;
+            /*padding-left:5px;*/
+            left:10px;
+            position:relative;
+            /*padding-left:5px;*/
+        }
+        .active{
+            height:50px;
+            line-height:50px;
+            display: inline-block;
+            padding-left: 10px;
+            width:170px;
+        }
+        .class1{
+            /*width:150px;*/
+            height:50px;
+            width:145px;
+            display: inline-block;
+            background:#FFFFFF;
+
+        }
+        .list-group-item{
+            display: inline-block;
+            padding-left:10px;
+            padding-top:5px;
+            padding-bottom:5px;
+            padding-right:10px;
+            border-bottom:1px solid lightgray;
+
+        }
+        .list-a-show1{
+            /*display: none;*/
+
+            max-height: 300px;
+            overflow: auto;
+            width:180px;
+            background:#FFFFFF;
+            margin-bottom:0px;
+            /*padding-left:5px;*/
+            left:0px;
+            position:relative;
+            padding-left:0px;
+            display: none;
+
+        }
+        .caretDiv{
+            display: inline-block;
+            float: right;
+            right:10px;
+            position: relative;
+        }
+        .caret{
+            display: inline-block;
+            width: 0;
+            height: 0;
+            margin-left: 2px;
+            vertical-align: middle;
+            border-top: 4px dashed;
+            border-top: 4px solid \9;
+            border-right: 4px solid transparent;
+            border-left: 4px solid transparent;
+        }
+        .list-a-show{
+            display: none;
+            max-height: 300px;
+            overflow: auto;
+            border-bottom:1px solid darkgrey;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="left">
+        <div class="list-group1">
+            <a class="active" id="show-id">公司类别<div class="caretDiv"><span class="caret"></span></div></a>
+            <div class="list-a-show1" id="show-div">
+                <a class="list-group-item class1">徐工重型徐工道路徐工道路徐工道路</a>
+                <a class="list-group-item class1">徐工道路徐工道路徐工道路</a>
+                <a class="list-group-item class1">徐工基础徐工基础徐工基础</a>
+                <a class="list-group-item class1">徐工基础徐工基础徐工基础</a>
+                <a class="list-group-item class1">徐工重型徐工道路徐工道路徐工道路</a>
+                <a class="list-group-item class1">徐工道路徐工道路徐工道路</a>
+                <a class="list-group-item class1">徐工基础徐工基础徐工基础</a>
+                <a class="list-group-item class1">徐工基础徐工基础徐</a>
+            </div>
+        </div>
+        <div class="list-group1">
+            <a class="active" id="show-id1">Cras justo odio<div class="caretDiv"><span class="caret"></span></div></a>
+            <div class="list-a-show1" id="show-div1">
+                <a class="list-group-item class1">Dapibus ac facilisis in</a>
+                <a class="list-group-item class1">Morbi leo risus</a>
+                <a class="list-group-item class1">Porta ac consectetur ac</a>
+                <a class="list-group-item class1">Vestibulum at eros</a>
+            </div>
+        </div>
+        <!--<div class="list-group1">-->
+            <!--<a class="list-group-item  active" id="show-id2">Cras justo odio<div class="caretDiv"><span class="caret"></span></div></a>-->
+            <!--<div class="list-a-show" id="show-div2">-->
+                <!--<a class="list-group-item class1">Dapibus ac facilisis in</a>-->
+                <!--<a class="list-group-item class1">Morbi leo risus</a>-->
+                <!--<a class="list-group-item class1">Porta ac consectetur ac</a>-->
+                <!--<a class="list-group-item class1">Vestibulum at eros</a>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="list-group1">-->
+            <!--<a class="list-group-item  active" id="show-id3">Cras justo odio<div class="caretDiv"><span class="caret"></span></div></a>-->
+            <!--<div class="list-a-show" id="show-div3">-->
+                <!--<a class="list-group-item class1">Dapibus ac facilisis in</a>-->
+                <!--<a class="list-group-item class1">Morbi leo risus</a>-->
+                <!--<a class="list-group-item class1">Porta ac consectetur ac</a>-->
+                <!--<a class="list-group-item class1">Vestibulum at eros</a>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+</body>
+<script>
+ function test1(){
+     var showOrNo=true;
+     $("#show-id").click(function(){
+         //$("#show-div").toggle(1000);
+         if(showOrNo){
+             //$("#show-div").removeClass('hidden');
+             showOrNo=false;
+         }else{
+             //$("#show-div").addClass('hidden');
+             showOrNo=true;
+         }
+
+     });
+ }
+ !(function main(){
+     $("#show-id").click(function(){
+         //alert('sdfdsfds');
+         $("#show-div").toggle();
+     });
+     $("#show-id1").click(function(){
+         $("#show-div1").toggle();
+     });
+     $("#show-id2").click(function(){
+         $("#show-div2").toggle();
+     });
+     $("#show-id3").click(function(){
+         $("#show-div3").toggle();
+     });
+ })()
+
+</script>
+</html>

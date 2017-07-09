@@ -25,7 +25,8 @@
 	}
 	//addEventAndSubmit();
 	EventUtil.addEventHandler(subId,'click',function(){
-		window.location="mainPage.html";
+		//window.location="mainPage.html";
+		window.location="../resumeWeb/index.html";
 	});
 		
 })();

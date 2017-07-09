@@ -102,9 +102,13 @@ $(document).ready(function(e){
 	}
 	//导航栏btn绑定事件
 	function bindBtn(){
-		var btn1=document.querySelector(".btn-one");
+		var btn1=document.querySelector(".btn-one"),
+			btn2=document.querySelector(".btn-two");
 		btn1.addEventListener('click',function(e){
 			window.location="duoLanBuJu.html";	
+		},false);
+		btn2.addEventListener('click',function(e){
+			window.location="flexBox.html";	
 		},false);	
 	}
 	//主函数入口；

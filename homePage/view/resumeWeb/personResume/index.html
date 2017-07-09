@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>resume</title>
+    <link href="css/indexAll.css" rel="stylesheet" >
+    <script src="node_modules/chart.js/src/chart.js"></script>
+    <!--<script src="js/indexAll.js"></script>-->
+</head>
+<body id="mainBody">
+    <nav class="nav-title">
+        <div class="nav_wrap">
+            <div class="resume_logo">
+                <a href="index.html">个人简历</a>
+            </div>
+            <div class="nav_bar">
+                <ul class="nav_bar_ul">
+                    <li><a href="index.html">主页</a></li>
+                    <li><a href="html/photoWell.html">照片墙</a></li>
+                    <li><a href="html/mainPage.html">个人博客</a></li>
+                    <li><a href="#">page4</a></li>
+                    <li><a href="#">page5</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <aside class="main-info">
+        <div class="person-img">
+            <div>
+                <!--<img src="img/1.jpg">-->
+            </div>
+        </div>
+        <h2><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>我要的天空是有前端的地方</h2>
+        <div class="div-line">
+            <hr>
+        </div>
+        <div class="person-info">
+            <p>田健</p>
+            <p>前端工程师</p>
+            <p>18709234574</p>
+        </div>
+    </aside>
+    <section class="main-body">
+        <div class="person-info-all person-main-info" id="mainInfo">
+            <div class="con_wrap">
+                <div class="tit_wrap">
+                    <h1>关于我</h1>
+                    <div class="scissors">
+                        <div class="eat-line"></div>
+                        <span></span>
+
+                    </div>
+                    <h2> 如果debugging是一种消灭bug的过程,那编程就一定是把bug放进去的过程。</h2>
+                </div>
+                <div class="myinfo">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td rowspan="6">
+                                <img src="img/IT.jpg">
+                            </td>
+                            <td>姓名 | 田健</td>
+                            <td>手机 | 18709234574</td>
+
+                        </tr>
+                        <tr>
+                            <td>性别 | 男</td>
+                            <td>邮箱 | 942347210@qq.com</td>
+                        </tr>
+                        <tr>
+                            <td>出生 | 1993.02.06</td>
+
+                            <td>QQ号 | 942347210</td>
+                        </tr>
+                        <tr>
+                            <td>居住 | 陕西省西安</td>
+                            <td>户籍 | 甘肃平凉</td>
+                        </tr>
+                        <tr>
+                            <td>学历 | 硕士</td>
+                            <td>学校 | 西安电子科技大学</td>
+                        </tr>
+                        <tr>
+                            <td>专业 | 机械电子</td>
+                            <td>英语 | 英语六级</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <p>项目：</p><br>
+                                <a href="http://58.218.196.217:8082">1. 徐工三维发布物（html+css+js+PHP,需兼容IE7,并实现响应式布局）</a><br>
+                                <a>2. 基于Pro/E二次开发，三维模型的自动装配以及拆分动画（C++）</a><br><br>
+                                <p href="">小作品 （查看网址：https://jjflyz.github.io  主要挂载Github主页）</p><br>
+                                <a href="html/photoWell.html">1. 个人照片墙（注：已连接到地址） </a>
+                                <a href="html/mainPage.html">2. 个人主页 </a>
+                                <a href="＃"></a><br>
+
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="info-slice" id="infoSlice1">
+        </div>
+        <div class="person-info-all" id="skillInfo">
+            <div class="skill-table">
+                <canvas id="canvas-table" class="canvas-table-class" width="400" height="400"></canvas>
+            </div>
+            <div class="skill-info">
+                <div></div>
+            </div>
+        </div>
+        <div class="info-slice" id="infoSlice2">
+        </div>
+        <div class="person-info-all" id="objectInfo">
+2
+        </div>
+        <div class="info-slice"id="infoSlice3">
+
+        </div>
+    </section>
+    <aside class="right-slice">
+        <a class="circle-cur" href="#mainBody"></a>
+        <a class="circle-cur" href="#infoSlice1"></a>
+        <a class="circle-cur" href="#infoSlice2"></a>
+        <!--<a class="circle-cur" href="#infoSlice3"></a>-->
+    </aside>
+    <footer class="foot-bar">
+
+    </footer>
+    <script>
+        var ctx = document.getElementById("canvas-table").getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+</body>
+</html>

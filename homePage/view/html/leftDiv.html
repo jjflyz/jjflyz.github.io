@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>left</title>
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/leftDiv.css" rel="stylesheet">
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="left">
+        <div class="container">
+            <div class="list-group">
+                <a class="list-group-item class1 active" id="show-id">公司类别<div class="caretDiv"><span class="caret"></span></div></a>
+                <div class="list-a-show" id="show-div">
+                    <a class="list-group-item class1">徐工重型徐工道路徐工道路徐工道路<span></span></a>
+                    <a class="list-group-item class1">徐工道路徐工道路徐工道路</a>
+                    <a class="list-group-item class1">徐工基础徐工基础徐工基础</a>
+                    <a class="list-group-item class1">徐工基础徐工基础徐工基础</a>
+                    <a class="list-group-item class1">徐工重型徐工道路徐工道路徐工道路</a>
+                    <a class="list-group-item class1">徐工道路徐工道路徐工道路</a>
+                    <a class="list-group-item class1">徐工基础徐工基础徐工基础</a>
+                    <a class="list-group-item class1">徐工基础徐工基础徐</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="list-group">
+                <a class="list-group-item class1 active" id="show-id1">Cras justo odio<div class="caretDiv"><span class="caret"></span></div></a>
+                <div class="list-a-show" id="show-div1">
+                    <a class="list-group-item class1">Dapibus ac facilisis in</a>
+                    <a class="list-group-item class1">Morbi leo risus</a>
+                    <a class="list-group-item class1">Porta ac consectetur ac</a>
+                    <a class="list-group-item class1">Vestibulum at eros</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="list-group">
+                <a class="list-group-item class1 active" id="show-id2">Cras justo odio<div class="caretDiv"><span class="caret"></span></div></a>
+                <div class="list-a-show" id="show-div2">
+                    <a class="list-group-item class1">Dapibus ac facilisis in</a>
+                    <a class="list-group-item class1">Morbi leo risus</a>
+                    <a class="list-group-item class1">Porta ac consectetur ac</a>
+                    <a class="list-group-item class1">Vestibulum at eros</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="list-group">
+                <a class="list-group-item class1 active" id="show-id3">Cras justo odio<div class="caretDiv"><span class="caret"></span></div></a>
+                <div class="list-a-show" id="show-div3">
+                    <a class="list-group-item class1">Dapibus ac facilisis in</a>
+                    <a class="list-group-item class1">Morbi leo risus</a>
+                    <a class="list-group-item class1">Porta ac consectetur ac</a>
+                    <a class="list-group-item class1">Vestibulum at eros</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <h1>this is homepage designed by tianjian </h1>
+    </div>
+</body>
+<script>
+ function test1(){
+     var showOrNo=true;
+     $("#show-id").click(function(){
+         //$("#show-div").toggle(1000);
+         if(showOrNo){
+             //$("#show-div").removeClass('hidden');
+             showOrNo=false;
+         }else{
+             //$("#show-div").addClass('hidden');
+             showOrNo=true;
+         }
+
+     });
+ }
+ !(function main(){
+     $("#show-id").click(function(){
+         $("#show-div").toggle();
+     });
+     $("#show-id1").click(function(){
+         $("#show-div1").toggle();
+     });
+     $("#show-id2").click(function(){
+         $("#show-div2").toggle();
+     });
+     $("#show-id3").click(function(){
+         $("#show-div3").toggle();
+     });
+ })()
+
+</script>
+<script src="../js/leftDiv.js"></script>
+</html>

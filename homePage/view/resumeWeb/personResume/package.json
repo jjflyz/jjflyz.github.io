@@ -1,0 +1,14 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "person resume",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tianjian",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^2.6.0"
+  }
+}
